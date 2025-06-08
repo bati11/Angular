@@ -1,0 +1,15 @@
+<!-- <p>lesson-list works!</p> -->
+<!-- <ng-container class="gallery" *ngFor="let l of lessons">
+    <div class="lesson-card" [ngStyle]="l.StartDate <= currentDate ? {'border':'5px solid red'}: {}">
+        <app-lesson [lesson]="l"></app-lesson>
+    </div>
+</ng-container> -->
+<div class="gallery">
+  <div 
+    class="lesson-card" 
+    *ngFor="let l of lessons"
+    [ngStyle]="l.StartDate <= currentDate ? {'border':'5px solid red'} : {}"
+  >
+    <app-lesson [lesson]="l"></app-lesson>
+  </div>
+</div>

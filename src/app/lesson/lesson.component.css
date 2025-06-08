@@ -1,0 +1,13 @@
+.lesson-details {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  width: 240px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.lesson-details:hover {
+  transform: scale(1.03);
+}
