@@ -5,12 +5,23 @@ import { User } from '../model/user.model';
 // import { get } from 'http';
 import { Route } from '@angular/router';
 import { UsersListServiceService } from '../service/users-list-service.service';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { LessonListComponent } from '../lesson-list/lesson-list.component';
 import { RegistrationComponent } from '../registration/registration.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {FormsModule} from '@angular/forms';
+
+
 @Component({
   selector: 'app-login',
-  imports: [ReactiveFormsModule, FormsModule , LessonListComponent, RegistrationComponent],
+  imports: [ReactiveFormsModule, FormsModule , LessonListComponent,
+            RegistrationComponent,MatFormFieldModule, MatInputModule,
+            MatButtonModule, MatDividerModule, MatIconModule,MatToolbarModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

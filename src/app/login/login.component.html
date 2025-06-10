@@ -1,8 +1,19 @@
-<p>login works!</p>
-<form [formGroup] = "formUser" name="form">
-    <label for="">שם</label>
-    <input type="text" formControlName="name"><br><br>
-    <label for="">סיסמא</label>
-    <input type="password" formControlName="password"><br><br>
+<mat-toolbar>
+  <span>My Studio</span>
+</mat-toolbar>
+<br><br>
+<form [formGroup] = "formUser" name="form" class="form">
+    <mat-form-field>
+        <mat-label>שם</mat-label>
+        <input matInput formControlName="name" value="Tzipi">
+    </mat-form-field><br><br>
+
+    <mat-form-field>
+        <mat-label>סיסמא</mat-label>
+        <input matInput formControlName="password">
+    </mat-form-field><br><br>
+
 </form>
-<button (click) = "checkDetails()">כניסה</button>
+  <div class="form">
+    <button matButton="elevated"(click) = "checkDetails()"  id="send">כניסה</button>
+  </div>
